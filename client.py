@@ -3,8 +3,6 @@ import socket
 port = 10500
 dest = 'localhost'
 
-
-
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 print(f'== Conectando ao servidor {dest}:{port}')
@@ -18,4 +16,3 @@ while True:
     print(f'Servidor: {msg.decode()}')
 
 client.close()
-
